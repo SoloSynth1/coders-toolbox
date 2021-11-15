@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/components/molecules/Home.vue'
 import HashCompute from '@/components/molecules/HashCompute'
 import RandomStringGenerator from "@/components/molecules/RandomStringGenerator";
+import ColorPatchMaker from "@/components/molecules/ColorPatchMaker";
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,11 @@ const routes = [
     name: 'Random String',
     component: RandomStringGenerator
   },
+  {
+    path: '/color-patch',
+    name: 'Color Patch Maker',
+    component: ColorPatchMaker
+  }
 ]
 
 const router = new VueRouter({
