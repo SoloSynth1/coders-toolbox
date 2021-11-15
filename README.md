@@ -1,5 +1,11 @@
 # coders-toolbox
 
+Coder's Toolbox - https://toolbox.solsyn.dev
+
+A trusty toolbox for all your coding needs.
+
+*Secure. Fast. No data transfers. No backends called. Works perfectly even when offline.*
+
 ## Project setup
 ```
 npm install
