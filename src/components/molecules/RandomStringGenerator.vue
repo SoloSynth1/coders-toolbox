@@ -5,7 +5,7 @@
       <div>
         <span>String Length:</span>
         <input v-model="length"/>
-        <Button button-name="Generate Random String" @click="generateRandomString"></Button>
+        <button @click="generateRandomString">Generate Random String</button>
       </div>
       <div>
         <OutputBox :output="randomString"></OutputBox>
@@ -15,15 +15,13 @@
 </template>
 
 <script>
-import Button from "@/components/atoms/Button"
 import OutputBox from "@/components/atoms/OutputBox"
 import randomstring from 'randomstring'
 
 export default {
   name: "HashCompute",
   components: {
-    OutputBox,
-    Button
+    OutputBox
   },
   data: () => {
     return {
