@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Hash Compute</h1>
-    <InputBox @change="calculateHash"></InputBox>
+    <InputBox @change="text = $event" :default-value="text"></InputBox>
     <OutputBox :output="hash"></OutputBox>
   </div>
 </template>
@@ -17,14 +17,14 @@ export default {
     OutputBox,
     InputBox
   },
-  data: () => {
-    return {
-      hash: sha256("")
+  computed: {
+    hash: function () {
+      return sha256(this.text)
     }
   },
-  methods: {
-    calculateHash (value) {
-      this.hash = sha256(value.toString())
+  data: () => {
+    return {
+      text: ""
     }
   }
 }

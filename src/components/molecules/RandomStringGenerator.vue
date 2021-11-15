@@ -1,8 +1,16 @@
 <template>
   <div>
     <h1>Random String Generator</h1>
-    <Button button-name="Generate Random String" @click="generateRandomString"></Button>
-    <OutputBox :output="randomString"></OutputBox>
+    <span class="content">
+      <div>
+        <span>String Length:</span>
+        <input v-model="length"/>
+        <Button button-name="Generate Random String" @click="generateRandomString"></Button>
+      </div>
+      <div>
+        <OutputBox :output="randomString"></OutputBox>
+      </div>
+    </span>
   </div>
 </template>
 
@@ -19,17 +27,21 @@ export default {
   },
   data: () => {
     return {
-      randomString: ""
+      randomString: "",
+      length: 100
     }
   },
   methods: {
     generateRandomString () {
-      this.randomString = randomstring.generate()
+      this.randomString = randomstring.generate({length: this.length})
     }
   }
 }
 </script>
 
 <style scoped>
+.content {
+  display: block;
+}
 
 </style>

@@ -11,7 +11,7 @@ export default {
 
 <style scoped>
 textarea {
-  width: 20%;
+  width: 50%;
   height: 100px;
   vertical-align: top;
 }

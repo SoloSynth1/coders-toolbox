@@ -1,24 +1,19 @@
 <template>
   <div>
-    <textarea ref="inputArea" @input="handleInput">
-    </textarea>
+    <textarea @input="$emit('change', $event.target.value)" :value="defaultValue"/>
   </div>
 </template>
 
 <script>
 export default {
   name: "InputBox",
-  methods: {
-    handleInput () {
-      this.$emit('change', this.$refs.inputArea.value)
-    }
-  }
+  props:['defaultValue']
 }
 </script>
 
 <style scoped>
 textarea {
-  width: 20%;
+  width: 50%;
   height: 100px;
   vertical-align: top;
 }
