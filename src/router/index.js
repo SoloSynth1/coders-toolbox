@@ -4,6 +4,7 @@ import Home from '@/components/molecules/Home.vue'
 import HashCompute from '@/components/molecules/HashCompute'
 import RandomStringGenerator from "@/components/molecules/RandomStringGenerator";
 import ColorPatchMaker from "@/components/molecules/ColorPatchMaker";
+import Base64EncDec from "@/components/molecules/Base64EncDec";
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/color-patch',
     name: 'Color Patch Maker',
     component: ColorPatchMaker
+  },
+  {
+    path: '/base64-encode-decode',
+    name: 'Base64 Encode/Decode',
+    component: Base64EncDec
   }
 ]
 

@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/hash-compute">Hash Compute</router-link> |
       <router-link to="/random-string">Random String</router-link> |
-      <router-link to="/color-patch">Color Patch</router-link>
+      <router-link to="/color-patch">Color Patch</router-link> |
+      <router-link to="/base64-encode-decode">Base64 Encode/Decode</router-link>
     </div>
     <router-view/>
   </div>
