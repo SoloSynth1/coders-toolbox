@@ -5,6 +5,7 @@ import HashCompute from '@/components/molecules/HashCompute'
 import RandomStringGenerator from "@/components/molecules/RandomStringGenerator";
 import ColorPatchMaker from "@/components/molecules/ColorPatchMaker";
 import Base64EncDec from "@/components/molecules/Base64EncDec";
+import UrlEncDec from "@/components/molecules/UrlEncDec";
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/base64-encode-decode',
     name: 'Base64 Encode/Decode',
     component: Base64EncDec
+  },
+  {
+    path: '/url-encode-decode',
+    name: 'URL Encode/Decode',
+    component: UrlEncDec
   }
 ]
 
