@@ -11,6 +11,8 @@
     "@vue/cli": "^4.5.15",
     "core-js": "^3.20.3",
     "follow-redirects": "^1.14.7",
+    "glob-parent": "^6.0.2",
+    "merge": "^2.1.1",
     "randomstring": "^1.2.1",
     "vue": "^2.6.14",
     "vue-router": "^3.5.3"
