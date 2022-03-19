@@ -6,7 +6,8 @@
       <router-link to="/random-string">Random String</router-link> |
       <router-link to="/color-patch">Color Patch</router-link> |
       <router-link to="/base64-encode-decode">Base64</router-link> |
-      <router-link to="/url-encode-decode">URL</router-link>
+      <router-link to="/url-encode-decode">URL</router-link> |
+      <router-link to="/qrcode">QRCode</router-link>
     </div>
     <router-view/>
   </div>
