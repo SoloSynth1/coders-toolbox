@@ -6,7 +6,7 @@ import RandomStringGenerator from "@/components/molecules/RandomStringGenerator"
 import ColorPatchMaker from "@/components/molecules/ColorPatchMaker";
 import Base64EncDec from "@/components/molecules/Base64EncDec";
 import UrlEncDec from "@/components/molecules/UrlEncDec";
-import QRCode from "@/components/molecules/QRCode";
+import QRCodeGenerator from "@/components/molecules/QRCodeGenerator";
 
 Vue.use(VueRouter)
 
@@ -44,7 +44,7 @@ const routes = [
   {
     path: '/qrcode',
     name: 'QR Code Generate',
-    component: QRCode
+    component: QRCodeGenerator
   }
 ]
 
