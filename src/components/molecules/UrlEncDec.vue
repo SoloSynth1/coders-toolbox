@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import InputBox from "@/components/atoms/InputBox"
+import InputBox from "../atoms/InputBox.vue"
 
 export default {
   name: "Url64EncDec",

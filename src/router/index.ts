@@ -1,14 +1,11 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '@/components/molecules/Home.vue'
-import HashCompute from '@/components/molecules/HashCompute'
-import RandomStringGenerator from "@/components/molecules/RandomStringGenerator";
-import ColorPatchMaker from "@/components/molecules/ColorPatchMaker";
-import Base64EncDec from "@/components/molecules/Base64EncDec";
-import UrlEncDec from "@/components/molecules/UrlEncDec";
-import QRCodeGenerator from "@/components/molecules/QRCodeGenerator";
-
-Vue.use(VueRouter)
+import * as VueRouter from 'vue-router';
+import Home from '../components/molecules/Home.vue'
+import HashCompute from '../components/molecules/HashCompute.vue'
+import RandomStringGenerator from "../components/molecules/RandomStringGenerator.vue";
+import ColorPatchMaker from "../components/molecules/ColorPatchMaker.vue";
+import Base64EncDec from "../components/molecules/Base64EncDec.vue";
+import UrlEncDec from "../components/molecules/UrlEncDec.vue";
+import QRCodeGenerator from "../components/molecules/QRCodeGenerator.vue";
 
 const routes = [
   {
@@ -48,10 +45,10 @@ const routes = [
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+
+const router = VueRouter.createRouter({
+  history: VueRouter.createWebHashHistory(),
+  routes,
 })
 
 export default router

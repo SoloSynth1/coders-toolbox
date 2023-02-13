@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import OutputBox from "@/components/atoms/OutputBox"
+import OutputBox from "../atoms/OutputBox.vue"
 import randomstring from 'randomstring'
 
 export default {

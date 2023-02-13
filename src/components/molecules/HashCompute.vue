@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import InputBox from "@/components/atoms/InputBox"
-import OutputBox from "@/components/atoms/OutputBox"
-import {getHexDigest} from "@/utils";
-import Selector from "../atoms/Selector";
+import InputBox from "../atoms/InputBox.vue"
+import OutputBox from "../atoms/OutputBox.vue"
+import getHexDigest from "../../utils.js";
+import Selector from "../atoms/Selector.vue";
 
 export default {
   name: "HashCompute",
