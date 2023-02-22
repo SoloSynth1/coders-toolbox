@@ -11,6 +11,10 @@
       <router-link to="/qrcode">QRCode</router-link>
     </div>
     <router-view/>
+    <p>Dark Theme: {{ isDark }}</p>
+    <button @click="toggleDark()">
+      Toggle Dark Mode
+    </button>
   </div>
 </template>
 
@@ -20,6 +24,14 @@
 // export default {
 //   // components: {NavBar}
 // }
+import { useDark, useToggle } from "@vueuse/core";
+const isDark = useDark({
+  selector: "body", //element to add attribute to
+  attribute: "theme", // attribute name
+  valueDark: "custom-dark", // attribute value for dark mode
+  valueLight: "custom-light", // attribute value for light mode
+});
+const toggleDark = useToggle(isDark);
 </script>
 
 <style>
@@ -44,4 +56,13 @@
   color: #42b983;
 }
 
+.dark {
+  background: #16171d;
+  color: #fff;
+}
+
+[theme="custom-dark"] {
+  background: #16171d;
+  color: #fff;
+}
 </style>
